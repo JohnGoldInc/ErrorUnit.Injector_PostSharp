@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ErrorUnit.Injector_PostSharp.nuspec" />
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>

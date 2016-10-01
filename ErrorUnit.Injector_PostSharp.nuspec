@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ErrorUnit.Injector_PostSharp</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>johngoldinc</authors>
+    <owners>johngoldinc</owners>
+    <projectUrl>http://JohnGoldInc.com</projectUrl>
+    <iconUrl>http://johngoldinc.com/img/ErrorUnitLargeLogo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Compatibility library for ErrorUnit to work with PostSharp AOP.</description>
+    <releaseNotes>Version 1</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>ErrorUnit PostSharp Error ErrorHandling</tags>
+  </metadata>
+</package>
