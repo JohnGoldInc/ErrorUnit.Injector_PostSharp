@@ -1,17 +1,22 @@
 ﻿using ErrorUnit.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using PostSharp.Aspects;
+using System;
+using System.Linq;
 
 namespace ErrorUnit.Injector_PostSharp
 {
+    /// <summary>
+    /// ErrorPrecondition for PostSharp
+    /// </summary>
+    [Serializable]
     public class ErrorPrecondition : aErrorPrecondition
     {
         private MethodExecutionArgs args;
 
+        /// <summary>
+        /// Constructor for ErrorPrecondition
+        /// </summary>
+        /// <param name="args">The MethodExecutionArgs.</param>
         public ErrorPrecondition(MethodExecutionArgs args)
         {
             this.args = args;
