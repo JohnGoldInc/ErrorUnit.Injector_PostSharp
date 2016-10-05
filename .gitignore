@@ -68,6 +68,7 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
+postsharp.config
 
 # Chutzpah Test files
 _Chutzpah*
