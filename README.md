@@ -4,7 +4,7 @@ Unlike integrating with an IoC Library this will enable all classes/methods in a
 (IoC library integrations are limited to IoC managed classes/methods)
 
 Currently ErrorUnit.Injector_PostSharp has an open source licence for the use of Postsharp (Thanks Gael!);
-you will have to download the free PostSharp Express at https://www.postsharp.net/download at minimum;
+you will have to download the free PostSharp Express ( https://www.postsharp.net/download ) at minimum;
 But check out the other cool stuff you can do with AOP in general and PostSharp in specific.
 
 ## Instructions 
