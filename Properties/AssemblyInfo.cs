@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ErrorUnit.Injector_PostSharp")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Compatibility library for ErrorUnit to work with PostSharp AOP")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("John Gold Inc")]
 [assembly: AssemblyProduct("ErrorUnit.Injector_PostSharp")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]

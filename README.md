@@ -1,15 +1,21 @@
 ﻿# ErrorUnit.Injector_PostSharp
 Compatibility library for ErrorUnit to work with PostSharp AOP.
-Unlike integrating with an IoC Library this will enable all methods to become Unit Test endpoints. 
-(IoC library integrations are limited to IoC managed class methods)
+Unlike integrating with an IoC Library this will enable all classes/methods in an assembly to become Unit Test endpoints. 
+(IoC library integrations are limited to IoC managed classes/methods)
 
-Currently a purchase of at minimum *PostSharp Diagnostics* would be necessary after PostSharp's evaluation period https://www.postsharp.net/purchase
+Currently ErrorUnit.Injector_PostSharp has an open source licence for the use of Postsharp (Thanks Gael!);
+you will have to download the free PostSharp Express at https://www.postsharp.net/download at minimum;
+But check out the other cool stuff you can do with AOP in general and PostSharp in specific.
 
-ErrorUnitAspect is to be added to Assemblies you want ErrorUnit to log errors for:
-Add the line `[assembly:ErrorUnitAspect]` to your AssemblyInfo.cs file for each project you want error logs for
+## Instructions 
 
-Note: Since this is a AOP and not a IoC library you will not need to set up the Injector with:
+Add `[assembly:ErrorUnitAspect]` to the AssemblyInfo.cs file of each project you want ErrorUnit on.
+
+Note:
+To log your ErrorUnit formatted errors instead of just generating Unit Tests while in Visual Studio you will still have to set up a logger when your application starts, with  `ErrorUnitCentral._Logger = new ErrorUnitLogger();`
+
+But since this is a AOP and not a IoC library you will not need to set up the Injector with:
 
 `ErrorUnitCentral._Injector = new ErrorUnitInjector();`
-or
+and
 `ErrorUnitCentral._LinkInjector(container);`
