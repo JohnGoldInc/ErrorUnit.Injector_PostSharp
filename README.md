@@ -15,7 +15,7 @@ Add `[assembly:ErrorUnitAspect]` to the AssemblyInfo.cs file of each project you
 Note:
 To log your ErrorUnit formatted errors instead of just generating Unit Tests while in Visual Studio you will still have to set up a logger when your application starts, with  `ErrorUnitCentral._Logger = new ErrorUnitLogger();`
 
-But since this is a AOP and not a IoC library you will not need to set up the Injector with:
+But since this is an AOP and not an IoC library you will not need to set up the Injector with:
 
 `ErrorUnitCentral._Injector = new ErrorUnitInjector();`
 and
