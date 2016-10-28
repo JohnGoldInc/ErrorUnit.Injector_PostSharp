@@ -3,9 +3,10 @@ Compatibility library for ErrorUnit to work with PostSharp AOP.
 Unlike integrating with an IoC Library this will enable all classes/methods in an assembly to become Unit Test endpoints. 
 (IoC library integrations are limited to IoC managed classes/methods)
 
-Currently ErrorUnit.Injector_PostSharp has an open source licence for the use of Postsharp (Thanks Gael!);
-you will have to download the free PostSharp Express ( https://www.postsharp.net/download ) at minimum;
-But check out the other cool stuff you can do with AOP in general and PostSharp in specific.
+Currently while ErrorUnit is not past beta ErrorUnit.Injector_PostSharp has an open source licence for the use of Postsharp (Thanks Gael!);
+you will have to download the free PostSharp Express ( https://www.postsharp.net/download ); 
+But check out the full version and the other cool stuff you can do with AOP in general and PostSharp in specific. 
+( In the future with enough users we hope to include Postsharp technology fully integrated into ErrorUnit. )
 
 ## Instructions 
 
