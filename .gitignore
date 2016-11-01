@@ -247,3 +247,6 @@ ModelManifest.xml
 
 # Signature Key File
 *.snk
+
+#Postsharp licence
+PostSharp.license

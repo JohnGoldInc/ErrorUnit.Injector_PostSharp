@@ -90,6 +90,7 @@
     <None Include="ErrorUnit.Injector_PostSharp.nuspec" />
     <None Include="keyPair.snk" />
     <None Include="packages.config" />
+    <EmbeddedResource Include="PostSharp.license" />
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
