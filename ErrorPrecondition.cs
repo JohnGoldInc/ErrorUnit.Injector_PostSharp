@@ -1,4 +1,5 @@
 ﻿using ErrorUnit.Interfaces;
+using ErrorUnit.Models;
 using PostSharp.Aspects;
 using System;
 using System.Linq;

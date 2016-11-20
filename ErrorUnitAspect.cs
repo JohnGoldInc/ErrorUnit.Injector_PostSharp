@@ -20,7 +20,7 @@ namespace ErrorUnit.Injector_PostSharp
         /// </summary>
         /// <param name="args">Event arguments specifying which method is being executed, which are its arguments,
         /// and how should the execution continue after the execution of PostSharp.Aspects.IOnMethodBoundaryAspect.OnEntry(PostSharp.Aspects.MethodExecutionArgs).</param>
-        public override void OnEntry(MethodExecutionArgs args)
+        public sealed override void OnEntry(MethodExecutionArgs args)
         {
             stackInfo = new ErrorPrecondition(args);
             ErrorUnitCentral.Instance.CurrentStack_Add(stackInfo);
@@ -31,7 +31,7 @@ namespace ErrorUnit.Injector_PostSharp
         /// case that the method resulted with an exception.
         /// </summary>
         /// <param name="args">Event arguments specifying which method is being executed and which are its arguments.</param>
-        public override void OnException(MethodExecutionArgs args)
+        public sealed override void OnException(MethodExecutionArgs args)
         {
             ErrorUnitCentral.Instance.ThrowErrorStack(args.Exception);
         }
@@ -42,7 +42,7 @@ namespace ErrorUnit.Injector_PostSharp
         /// block).
         /// </summary>
         /// <param name="args">Event arguments specifying which method is being executed and which are its arguments.</param>
-        public override void OnExit(MethodExecutionArgs args)
+        public sealed override void OnExit(MethodExecutionArgs args)
         {
             stackInfo.End = DateTime.Now;
             ErrorUnitCentral.Instance.CleanUp(stackInfo.End.Value);
