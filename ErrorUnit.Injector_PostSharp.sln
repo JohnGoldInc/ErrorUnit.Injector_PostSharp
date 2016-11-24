@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorUnit.Injector_PostSharp", "ErrorUnit.Injector_PostSharp.csproj", "{3DFD8B01-0076-4F5F-9079-F06EC2F87228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorUnit.Injector_PostSharp.Test", "..\ErrorUnit.Injector_PostSharp.Test\ErrorUnit.Injector_PostSharp.Test.csproj", "{72FDD9A4-780E-46D1-8BE4-9088F935F77E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3DFD8B01-0076-4F5F-9079-F06EC2F87228}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DFD8B01-0076-4F5F-9079-F06EC2F87228}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DFD8B01-0076-4F5F-9079-F06EC2F87228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72FDD9A4-780E-46D1-8BE4-9088F935F77E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72FDD9A4-780E-46D1-8BE4-9088F935F77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72FDD9A4-780E-46D1-8BE4-9088F935F77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72FDD9A4-780E-46D1-8BE4-9088F935F77E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

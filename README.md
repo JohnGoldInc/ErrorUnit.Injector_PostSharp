@@ -10,7 +10,7 @@ But check out the full version and the other cool stuff you can do with AOP in g
 
 ## Instructions 
 
-Add `[assembly:ErrorUnitAspect]` to the AssemblyInfo.cs file of each project you want ErrorUnit on.
+Add `[assembly: ErrorUnit.Injector_PostSharp.ErrorUnitAspect]` to the AssemblyInfo.cs file of each project you want ErrorUnit on.
 
 Note:
 To log your ErrorUnit formatted errors instead of just generating Unit Tests while in Visual Studio you will still have to set up a logger when your application starts, with  `ErrorUnitCentral._Logger = new ErrorUnitLogger();`
