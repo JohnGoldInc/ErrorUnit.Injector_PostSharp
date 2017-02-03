@@ -33,7 +33,7 @@ namespace ErrorUnit.Injector_PostSharp
         /// <param name="args">Event arguments specifying which method is being executed and which are its arguments.</param>
         public sealed override void OnException(MethodExecutionArgs args)
         {
-            ErrorUnitCentral.Instance.ThrowErrorStack(args.Exception);
+            var errorUnitJson = ErrorUnitCentral.Instance.ThrowErrorStack(args.Exception);
         }
 
         /// <summary>
@@ -46,6 +46,7 @@ namespace ErrorUnit.Injector_PostSharp
         {
             stackInfo.End = DateTime.Now;
             ErrorUnitCentral.Instance.CleanUp(stackInfo.End.Value);
+          
         }
 
     }
